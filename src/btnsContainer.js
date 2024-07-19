@@ -53,7 +53,7 @@ const buttonsContainer = () => {
     window.addEventListener('resize', handleResize);
 
     closeBtn.addEventListener('click', () => {
-        hamburgerIcon.style.display = 'block';
+        hamburgerIcon.style.display = 'block' ;
         btnsContainer.style.display = 'none';
     });
 
