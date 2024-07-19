@@ -45,6 +45,7 @@ const buttonsContainer = () => {
     };
 
     hamburgerIcon.addEventListener('click', () => {
+        hamburgerIcon.style.display = 'none';
         btnsContainer.style.display = 'flex';
         adjustScrollPosition(btnsContainer);
     });
@@ -52,6 +53,7 @@ const buttonsContainer = () => {
     window.addEventListener('resize', handleResize);
 
     closeBtn.addEventListener('click', () => {
+        hamburgerIcon.style.display = 'block';
         btnsContainer.style.display = 'none';
     });
 
