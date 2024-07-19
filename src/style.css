@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Heebo:wght@100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    background-color: rgb(34, 33, 33);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+}
+
+#btnsContainer {
+    position: sticky;
+    z-index: 1000;
+    top: 100px;
+    display: flex;
+    justify-content: end;
+    right: 10px;
+    width: 95%;
+    gap: 20px;
+    padding: 10px;
+}
+
+#closeBtn {
+    text-align: end;
+}
+
+
+
+#closeBtn {
+    font-size: 2rem;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: rgb(37, 32, 32);
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+
+#title {
+    margin-top: 10px;
+    font-family: "Ga Maamli";
+    font-size: 60px;
+}
+
+#title .word {
+    color: rgb(185, 203, 218);
+}
+
+#title .word::after {
+    content: 'Flavorful Fork';
+    color: rgb(239, 46, 11);
+}
+
+
+#btns {
+    width: 40vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 110px;
+    font-size: 100%;
+    transition: ease transform .5s;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#bookTable {
+    background-color: rgb(255, 84, 22);
+    color: white;
+    padding: 0px 10px;
+    width: 120px;
+}
+
+#hamburger {
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+#homeContainer {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+
+#info {
+    height: 40vh;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#info p {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 18px;
+    font-family: cursive;
+    text-align: center;
+}
+
+#timings {
+    height: 25vh;
+    font-size: larger;
+}
+
+#slogan h1 {
+    font-size: 60px;
+}
+
+.page {
+    position: relative;
+}
+
+#menuContainer {
+    padding: 20px;
+    background-size: contain;
+    background-color:rgb(36, 44, 55)
+}
+
+#menuBox h2 {
+    font-size: 30px;
+}
+
+.item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+
+#breakfastItems,
+#appetizersandsnacksItems,
+#maincoursesItems,
+#beveragesItems,
+#dessertsItems {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 40px;
+}
+
+
+#aboutContainer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    background-color:rgb(20, 43, 43);
+}
+
+#aboutContainer h3 {
+    font-size: 25px;
+}
+
+#story,
+#cuisine,
+#team,
+#join {
+    position: relative;
+    top: -20px;
+    border: 1px solid white;
+    margin-top: 20px;
+    width: 40vw;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#story,
+#team {
+    right: 250px;
+}
+
+#cuisine,
+#join {
+    left: 250px;
+}
+
+#booking-form {
+    position: absolute;
+    border: 1px solid gray;
+    top: 100px;
+    left: 40%;
+    display: grid;
+    gap: 20px;
+    width: 350px;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 8px;
+    visibility: hidden;
+    box-sizing: border-box;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    width:90%;
+}
+
+#confirm {
+    width: auto;
+}
+
+
+@media (max-width:1220px) {
+    #title {
+        font-size: 55px;
+    }
+
+    #btns {
+        width: 50vw;
+        gap: 10px;
+    }
+
+    #booking-form {
+        left: 35%;
+    }
+}
+
+@media(max-width:1000px) {
+
+    #title {
+        font-size: 50px;
+        margin-top: 15px;
+    }
+
+    #btns {
+        width: 50vw;
+    }
+
+    button {
+        width: 80px;
+    }
+
+    #story,
+    #cuisine,
+    #team,
+    #join {
+        width: 70vw;
+    }
+
+    #story,
+    #team {
+        right: 100px;
+    }
+
+    #cuisine,
+    #join {
+        left: 100px;
+    }
+
+    #booking-form {
+        left: 33%;
+    }
+
+}
+
+@media(max-width:915px) {
+
+    #btns {
+        width: 50px;
+    }
+
+
+    #title {
+        font-size: 55px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .item img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #booking-form {
+        left: 32%;
+    }
+    
+}
+
+@media (max-width:800px){
+
+    #slogan {
+        width: 90vw;
+        margin-left: 23px;
+        margin-top: -120px;
+        height: 120px;
+    }
+
+    #slogan h1 {
+         font-size: 45px;
+    }
+
+    #timings {
+        margin-top: -50px;
+        font-size: large;
+    }
+
+    #story,
+    #cuisine,
+    #team,
+    #join {
+        width: 90vw;
+    }
+
+    #story,
+    #team {
+        right: 0;
+    }
+
+    #cuisine,
+    #join {
+        left: 0;
+    }
+
+    p {
+        font-size: 90%;
+    }
+
+    #info p {
+        font-size: 100%;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #booking-form {
+        top: 80px;
+        width: 300px;
+        left: 25%;
+    }
+  
+}
+
+
+@media (max-width:570px){
+
+#title {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+#info h1 {
+    font-size: 50px;
+    width: 90vw;
+}
+
+#slogan {
+    margin-top: -180px;
+}
+
+#slogan h1 {
+    font-size: 36px;
+}
+
+#timings {
+    margin-top: -150px;
+    font-size: 100%;
+}
+
+
+#menuContainer h2,
+#aboutContainer h3 {
+    font-size: 23px;
+}
+
+.item img {
+    width: 210px;
+    height: 210px;
+}
+
+#btnsContainer {
+    gap: 10px;
+}
+
+#booking-form {
+    width: 280px;
+    left: 22%;
+}
+
+p {
+    font-size: 85%;
+}
+
+}
